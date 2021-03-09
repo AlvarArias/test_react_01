@@ -1,14 +1,14 @@
-import "./styles.css";
 // Component List
+import * as pi from "./Math.js";
 
 export default function List() {
   return (
     <div className="List">
       <ul>
         My list
-        <li>item1</li>
-        <li>item2</li>
-        <li>item3</li>
+        <li>{pi.default}</li>
+        <li>{pi.dublePi()}</li>
+        <li>{pi.triplePi()}</li>
       </ul>
     </div>
   );
